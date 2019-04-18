@@ -12,8 +12,8 @@ class Song
     !@@artists.include?(artist) ? @@artists << artist : nil
     !@@genres.include?(genre) ? @@genres << genre : nil
     @@count += 1
-    @@artist_count =  
-      
+    @@artist_count =
+
   end
 
   def self.count
