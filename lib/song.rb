@@ -57,4 +57,5 @@ end
 
 song = Song.new("Smells Like Teen Spirit", "Nirvana", "Grunge")
 
-puts Song.artists
+puts Song.artists.inspect
+
