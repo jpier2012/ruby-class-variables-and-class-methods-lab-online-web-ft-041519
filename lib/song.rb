@@ -57,5 +57,5 @@ end
 
 song = Song.new("Smells Like Teen Spirit", "Nirvana", "Grunge")
 
-puts Song.artists.inspect
-puts Song.artists.itself
+puts Song.artist_count
+puts Song.genre_count
