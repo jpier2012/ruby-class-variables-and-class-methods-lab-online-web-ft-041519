@@ -21,7 +21,7 @@ class Song
         end
       }
     @@genre_count =
-      @@genre.each {|genre|
+      @@genres.each {|genre|
         if !@@genre_count.has_key?(genre)
           @@genre_count[genre] = 1
         else
@@ -33,5 +33,8 @@ class Song
   def self.count
     @@count
   end
+
+  def self.artists
+    @@artists.uniq
 
 end
