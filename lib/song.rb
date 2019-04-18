@@ -16,21 +16,17 @@ class Song
     !@@artists.include?(artist) ? @@artists << artist : nil
     !@@genres.include?(genre) ? @@genres << genre : nil
 
-    @@artists.each {|artist|
-      if !@@artist_count.has_key?(artist)
-        @@artist_count[artist] = 1
-      else
-        @@artist_count[artist] += 1
-      end
-    }
+    if !@@artist_count.has_key?(artist)
+      @@artist_count[artist] = 1
+    else
+      @@artist_count[artist] += 1
+    end
 
-    @@genres.each {|genre|
-      if !@@genre_count.has_key?(genre)
-        @@genre_count[genre] = 1
-      else
-        @@genre_count[genre] += 1
-      end
-      }
+    if !@@genre_count.has_key?(genre)
+      @@genre_count[genre] = 1
+    else
+      @@genre_count[genre] += 1
+    end
   end
 
   def self.count
