@@ -62,3 +62,4 @@ song = Song.new("Under the Bridge", "Red Hot Chili Peppers", "Rock")
 
 puts Song.artist_count
 puts Song.genre_count
+puts Song.count
