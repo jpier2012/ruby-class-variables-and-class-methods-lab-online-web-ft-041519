@@ -54,3 +54,7 @@ class Song
   end
 
 end
+
+song = Song.new("Smells Like Teen Spirit", "Nirvana", "Grunge")
+
+song.artists
