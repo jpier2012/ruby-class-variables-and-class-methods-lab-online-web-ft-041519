@@ -32,6 +32,7 @@ class Song
         else
           @@genre_count[genre] += 1
         end
+        binding.pry
       }
   end
 
@@ -61,4 +62,3 @@ song = Song.new("Smells Like Teen Spirit", "Nirvana", "Grunge")
 
 puts Song.artists
 
-binding.pry
