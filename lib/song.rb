@@ -59,6 +59,6 @@ end
 
 song = Song.new("Smells Like Teen Spirit", "Nirvana", "Grunge")
 
-puts song.artists
+puts Song.artists
 
 binding.pry
